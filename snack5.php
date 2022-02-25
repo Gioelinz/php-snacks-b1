@@ -27,10 +27,6 @@ $db = [
     ]
 ];
 
-
-$class = key($db) == 'teachers' ? 'gray' : 'green';
-
-
 ?>
 
 <!DOCTYPE html>
@@ -61,7 +57,9 @@ $class = key($db) == 'teachers' ? 'gray' : 'green';
 
 <body>
     <?php for ($i = 0; $i < count($db); $i++) :
+        $class = key($db) == 'teachers' ? 'gray' : 'green';
         $current_db = key($db)
+
     ?>
         <h1><?= $current_db ?></h1>
         <div class="<?= $class ?>">
