@@ -47,7 +47,8 @@ $posts = [
 for ($i = 0; $i < count($posts); $i++) {
     $current_post = key($posts);
     echo $current_post . '<br/>';
-    for ($y = 0; $y < count($post[$current_post]); $y++) {
+    for ($y = 0; $y < count($posts[$current_post]); $y++) {
+        echo $posts[$current_post][$y];
     }
 
     next($posts);
