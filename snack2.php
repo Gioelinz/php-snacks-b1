@@ -46,9 +46,9 @@ $posts = [
 
 for ($i = 0; $i < count($posts); $i++) {
     $current_post = key($posts);
-    echo $current_post . '<br/>';
+    echo "<h1>$current_post</h1>";
     for ($y = 0; $y < count($posts[$current_post]); $y++) {
-        echo $posts[$current_post][$y]['title'] . '<br/>' . $posts[$current_post][$y]['author'] . '<br/>' . $posts[$current_post][$y]['text'] . '<br/>';
+        echo '<h3>' . $posts[$current_post][$y]['title'] . '</h3>' . $posts[$current_post][$y]['author'] . '<br/>' . $posts[$current_post][$y]['text'] . '<br/>';
         //var_dump($posts[$current_post][$y]);
     }
 
